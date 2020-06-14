@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Health Track</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+   <header id="header">
+    <nav class="left">
+        <a href="#menu"><span>Menu</span></a>
+    </nav>
+    <a href="index.html" class="logo">Health Track</a>
+</header>
+<nav id="menu">
+    <ul class="links">
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="meusdados.html">Meus dados</a></li>
+        <li><a href="atividades.html">Minhas Atividades</a></li>
+        <li><a href="alimentacao.html">Minha Alimentação</a></li>
+        <li><a href="cadastroelogin.html#paralogin">Entrar</a></li>
+    </ul>				
+</nav>
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="meusdadoscol-md-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Meus dados</h4>
+                                </div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>Altura</label>
+                                                    <input min="0" type="number" class="form-control" placeholder="1,80">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>Peso</label>
+                                                    <input min="0" type="number" class="form-control" placeholder="75kg">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>IMC</label>
+                                                    <input min="0" type="number" class="form-control" placeholder="23.15">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label>Nome</label>
+                                                    <input type="text" class="form-control" placeholder="Herbert">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                                <div class="form-group">
+                                                    <label>Sobrenome</label>
+                                                    <input type="text" class="form-control" placeholder="Souto">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label>Endereço</label>
+                                                    <input type="text" class="form-control" placeholder="Rua">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>Estado</label>
+                                                    <select class="custom-select">
+                                                    <option value="Acre"> (AC)</option>
+<option value="Alagoas"> (AL)</option>
+<option value="Amapá"> (AP)</option>
+<option value="Amazonas"> (AM)</option>
+<option value="Bahia"> (BA)</option>
+<option value="Ceará"> (CE)</option>
+<option value="Distrito Federal"> (DF)</option>
+<option value="Espírito Santo"> (ES)</option>
+<option value="Goiás"> (GO)</option>
+<option value="Maranhão"> (MA)</option>
+<option value="Mato Grosso"> (MT)</option>
+<option value="Mato Grosso do Sul"> (MS)</option>
+<option value="Minas Gerais"> (MG)</option>
+<option value="Pará"> (PA)</option>
+<option value="Paraíba"> (PB)</option>
+<option value="Paraná"> (PR)</option>
+<option value="Pernambuco"> (PE)</option>
+<option value="Piauí"> (PI)</option>
+<option value="Rio de Janeiro"> (RJ)</option>
+<option value="Rio Grande do Norte"> (RN)</option>
+<option value="Rio Grande do Sul"> (RS)</option>
+<option value="Rondônia"> (RO)</option>
+<option value="Roraima"> (RR)</option>
+<option value="Santa Catarina"> (SC)</option>
+<option value="São Paulo"> (SP)</option>
+<option value="Sergipe"> (SE)</option>
+<option value="Tocantins"> (TO)</option>
+</select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>País</label>
+                                                    <input type="text" class="form-control" placeholder="Brasil">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-4 col-lg-6 col-xl-4">
+                                                <div class="form-group">
+                                                    <label>CEP</label>
+                                                    <input type="text" id="paracep" class="form-control" placeholder="00000-000">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label>Sobre mim</label>
+                                                    <textarea rows="4" cols="80" class="form-control" placeholder="Sua descrição" value="Mike"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Atualizar</button>
+                                        <div class="clearfix"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>  
+                        <!-- Scripts -->
+                        <script src="assets/js/jquery.min.js"></script>
+                        <script src="assets/js/jquery.scrolly.min.js"></script>
+                        <script src="assets/js/skel.min.js"></script>
+                        <script src="assets/js/util.js"></script>
+                        <script src="assets/js/main.js"></script>     
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+                        <script>
+                            $(document).ready(function(){
+                              $('#paracep').mask('99999-999');
+                            });
+                        </script>
+                        </body>
+                        </html>

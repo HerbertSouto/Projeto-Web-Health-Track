@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+  <title>Health Track</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="assets/css/cadastro.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <header id="header">
+        <nav class="left">
+            <a href="#menu"><span>Menu</span></a>
+        </nav>
+        <a href="index.html" class="logo">Health Track</a>
+    </header>
+    <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="meusdados.html">Meus dados</a></li>
+          <li><a href="atividades.html">Minhas Atividades</a></li>
+          <li><a href="alimentacao.html">Minha Alimentação</a></li>
+        </ul>
+    </nav>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    <div class="content">      
+      <!--FORMULÁRIO DE LOGIN-->
+      <div id="login">
+        <form> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="nome_login">Seu e-mail</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. healhtrack@.com.br"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Sua senha</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Entrar"/> 
+          </p>        
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div> 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form> 
+          <h1>Cadastro</h1>           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="healhtrack@.com.br"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastre-se"/>
+          </p>          
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div> 
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+</body>
+</html>

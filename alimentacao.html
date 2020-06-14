@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Health Track</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+	<body class="subpage">
+		<header id="header">
+            <nav class="left">
+                <a href="#menu"><span>Menu</span></a>
+            </nav>
+            <a href="index.html" class="logo">Health Track</a>
+		</header>
+		<nav id="menu">
+            <ul class="links">
+                <li><a href="index.html">Página Inicial</a></li>
+				<li><a href="meusdados.html">Meus dados</a></li>
+				<li><a href="atividades.html">Minhas Atividades</a></li>
+                <li><a href="alimentacao.html">Minha Alimentação</a></li>
+                <li><a href="cadastroelogin.html#paralogin">Entrar</a></li>	
+            </ul>				
+        </nav>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Minha Alimentação</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <table id="bookTable" class="table table-bordered table-condensed table-striped">
+                        <thead>
+                        <tr>
+                            <th>Tipo da Alimento</th>
+                            <th>porção (Gramas)</th>
+                            <th>Calorias</th>
+                            <th>Editar</th>
+                            <th>Excluir</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Dados do Alimento</div>
+                        <div class="panel-body">
+                            <form id="book-form">
+                                <div class="form-group">
+                                    <label for="title">Alimento</label>
+                                    <input type="text" name="title" id="book_title" class="form-control input-lg"
+                                           placeholder="Arroz">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="author">Porção em gramas</label>
+                                    <input type="number" name="author" id="book_author" class="form-control input-lg"
+                                           placeholder="100">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="publisher">Calorias</label>
+                                    <input type="number" name="publisher" id="book_publisher" class="form-control input-lg"
+                                           placeholder="220">
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" id="updateButton" class="btn btn-lg btn-primary">
+                                        Adicionar Alimento
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/html" id="bookTemplate">
+            <tr>
+                <td><%- title %></td>
+                <td><%- author %></td>
+                <td><%- publisher %></td>
+                <td>
+                    <button type='button' class='book-edit btn btn-default' data-id='<%- id %>'>
+                        <span class='glyphicon glyphicon-edit'></span>
+                    </button>
+                </td>
+                <td>
+                    <button type='button' class='book-delete btn btn-default' data-id='<%- id %>'>
+                        <span class='glyphicon glyphicon-remove'></span>
+                    </button>
+                </td>
+			</tr>	
+			    <!-- Scripts -->
+		    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+			<script src="js/book-form.js"></script>
+			<script src="js/book-table.js"></script>
+			<script src="js/main.js"></script>
+
+	</body>
+</html>
